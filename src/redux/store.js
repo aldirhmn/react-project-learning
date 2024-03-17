@@ -7,8 +7,6 @@ const store = configureStore({
   },
 });
 
-console.log("Store created", store.getState());
-
 store.subscribe(() => {
   console.log("Store changed", store.getState());
 });
